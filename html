@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FightManager</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+button{
+    background:#d62828;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#b71c1c;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🥊 FightManager</h1>
+    <p>Sistema de Gestão para Academias e Atletas de Artes Marciais</p>
+</header>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>👤 Atletas</h2>
+            <p>Cadastro, histórico de lutas e acompanhamento de peso.</p>
+            <button>Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>📅 Treinos</h2>
+            <p>Organização dos treinos e controle de presença.</p>
+            <button>Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>🏆 Competições</h2>
+            <p>Gerenciamento de campeonatos e categorias.</p>
+            <button>Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>💰 Financeiro</h2>
+            <p>Mensalidades, pagamentos e relatórios financeiros.</p>
+            <button>Acessar</button>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
